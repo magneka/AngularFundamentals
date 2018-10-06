@@ -6,7 +6,6 @@ template:  `
   <h2>HelloWorld</h2>
   <img src="/assets/images/basic-shield.png" />
   `
-
 })
 export class EventsAppComponent {
   title = 'app';
