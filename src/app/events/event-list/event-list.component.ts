@@ -2,20 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'events-list',
-  template:`
-    <div>
-      <h1>Upcoming Angular Events</h1>
-      <h2>{{event.name}}</h2>
-      <div>Date: {{event.date}}</div>
-      <div>Time: {{event.time}}</div>
-      <div>Price: \${{event.price}}</div>
-      <div>
-        <span>Location: {{event.location.address}}</span>
-        <span class="pad-left">{{event.location.city}}, {{event.location.country}}</span>
-      </div>
-
-    </div>
-  `,
+  templateUrl: './event-list.component.html',
   styleUrls: ['./event-list.component.css']
 })
 export class EventListComponent implements OnInit {

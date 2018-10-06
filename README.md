@@ -1,5 +1,6 @@
 
 https://github.com/jmcooper/angular-fundamentals-files
+https://jcoop.io/angular-practice-exercises/
 
 # NgFundamentals
 
