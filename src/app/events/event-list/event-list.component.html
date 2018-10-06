@@ -2,6 +2,7 @@
   <h1>Upcoming Angular Events</h1>
   <hr/>
   <div class="well hoverwell thumbnail">
-  <event-thumbnail [event]="event1"></event-thumbnail> 
+  <event-thumbnail (eventClick)="handleEventClicked($event)" 
+    [event]="event1" ></event-thumbnail> 
 
 </div>
