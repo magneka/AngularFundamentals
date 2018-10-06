@@ -13,11 +13,5 @@ export class EventThumbnailComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
-
-  someProperty:any = "some value";
-
-  logFoo() {
-    console.log('foo')
-  }
+  } 
 }
