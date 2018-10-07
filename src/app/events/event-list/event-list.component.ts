@@ -3,7 +3,7 @@ import { EventService } from '../../services/event.service';
 import { ToastrService } from '../../services/toastr.service';
 
 @Component({
-  selector: 'events-list',
+  //selector: 'events-list', Trenger ikke pga routing
   templateUrl: './event-list.component.html',
   styleUrls: ['./event-list.component.css']
 })
