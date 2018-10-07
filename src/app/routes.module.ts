@@ -5,12 +5,13 @@ import { EventDetailsComponent } from './events/event-details/event-details.comp
 import { EventListComponent } from './events/event-list/event-list.component';
 import { CreateEventComponent } from './events/create-event/create-event.component';
 import { Error404Component } from './errors/Error404/Error404.component';
+import { EventRouteActivator } from './events/event-details/event-route-activator.service';
 
 
 const routes:Routes = [
   { path: 'events/new', component: CreateEventComponent },
   { path: 'events', component: EventListComponent },
-  { path: 'events/:id', component: EventDetailsComponent  },
+  { path: 'events/:id', component: EventDetailsComponent, canActivate: [EventRouteActivator]  },
   { path: '404', component: Error404Component },
   { path: '', redirectTo: '/events', pathMatch: 'full'}
 ]

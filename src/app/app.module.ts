@@ -9,6 +9,7 @@ import { EventDetailsComponent } from './events/event-details/event-details.comp
 import { RoutesModule } from './routes.module';
 import { CreateEventComponent } from './events/create-event/create-event.component';
 import { Error404Component } from './errors/Error404/Error404.component';
+import { EventRouteActivator } from './events/event-details/event-route-activator.service';
 //import { ToastrService } from './services/toastr.service';
 //import { EventService } from './services/event.service';
 
@@ -27,6 +28,7 @@ import { Error404Component } from './errors/Error404/Error404.component';
     Error404Component
   ],
   //providers: [EventService, ToastrService],
+  providers: [EventRouteActivator],
   bootstrap: [EventsAppComponent]
 })
 export class AppModule { }
