@@ -8,6 +8,7 @@ import { NavBarComponent } from './nav/nav-bar/nav-bar.component';
 import { EventDetailsComponent } from './events/event-details/event-details.component';
 import { RoutesModule } from './routes.module';
 import { CreateEventComponent } from './events/create-event/create-event.component';
+import { M404Component } from './errors/m404/m404.component';
 //import { ToastrService } from './services/toastr.service';
 //import { EventService } from './services/event.service';
 
@@ -22,7 +23,8 @@ import { CreateEventComponent } from './events/create-event/create-event.compone
     EventThumbnailComponent,
     CreateEventComponent,
     NavBarComponent,
-    EventDetailsComponent
+    EventDetailsComponent,
+    M404Component
   ],
   //providers: [EventService, ToastrService],
   bootstrap: [EventsAppComponent]
