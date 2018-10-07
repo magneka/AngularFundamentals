@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { M404Component } from './m404.component';
+import { M404Component } from './Error404.component';
 
 describe('M404Component', () => {
   let component: M404Component;

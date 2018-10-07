@@ -8,7 +8,7 @@ import { NavBarComponent } from './nav/nav-bar/nav-bar.component';
 import { EventDetailsComponent } from './events/event-details/event-details.component';
 import { RoutesModule } from './routes.module';
 import { CreateEventComponent } from './events/create-event/create-event.component';
-import { M404Component } from './errors/m404/m404.component';
+import { Error404Component } from './errors/Error404/Error404.component';
 //import { ToastrService } from './services/toastr.service';
 //import { EventService } from './services/event.service';
 
@@ -24,7 +24,7 @@ import { M404Component } from './errors/m404/m404.component';
     CreateEventComponent,
     NavBarComponent,
     EventDetailsComponent,
-    M404Component
+    Error404Component
   ],
   //providers: [EventService, ToastrService],
   bootstrap: [EventsAppComponent]
