@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from '../../services/event.service';
 import { ToastrService } from '../../services/toastr.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   //selector: 'events-list', Trenger ikke pga routing
@@ -9,15 +10,17 @@ import { ToastrService } from '../../services/toastr.service';
 })
 export class EventListComponent implements OnInit {
 
-  events:any[]
+  events:any
 
   constructor(
     private eventService: EventService,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private route: ActivatedRoute
     ) {}
 
   ngOnInit() {
-    this.events = this.eventService.getEvents()
+    //this.eventService.getEvents().subscribe(events => { this.events = events})
+    this.events = this.route.snapshot.data['events']
   }
 
   handleThumbnailClickEvent(eventName) {

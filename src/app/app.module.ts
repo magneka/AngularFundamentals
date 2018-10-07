@@ -11,6 +11,7 @@ import { CreateEventComponent } from './events/create-event/create-event.compone
 import { Error404Component } from './errors/Error404/Error404.component';
 import { EventRouteActivator } from './events/event-details/event-route-activator.service';
 import { componentNeedsResolution } from '@angular/core/src/metadata/resource_loading';
+import { EventsListResolver } from './services/events-list-resolver.service';
 //import { ToastrService } from './services/toastr.service';
 //import { EventService } from './services/event.service';
 
@@ -30,6 +31,7 @@ import { componentNeedsResolution } from '@angular/core/src/metadata/resource_lo
   ],
   //providers: [EventService, ToastrService],
   providers: [
+    EventsListResolver,
     EventRouteActivator,
     {
       provide: 'canDeactivateCreateEvent',
