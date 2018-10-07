@@ -7,6 +7,7 @@ import { EventThumbnailComponent } from './events/event-thumbnail/event-thumbnai
 import { NavBarComponent } from './nav/nav-bar/nav-bar.component';
 import { EventDetailsComponent } from './events/event-details/event-details.component';
 import { RoutesModule } from './routes.module';
+import { CreateEventComponent } from './events/create-event/create-event.component';
 //import { ToastrService } from './services/toastr.service';
 //import { EventService } from './services/event.service';
 
@@ -19,6 +20,7 @@ import { RoutesModule } from './routes.module';
     EventsAppComponent,
     EventListComponent,
     EventThumbnailComponent,
+    CreateEventComponent,
     NavBarComponent,
     EventDetailsComponent
   ],
