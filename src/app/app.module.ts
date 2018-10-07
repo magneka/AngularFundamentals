@@ -12,6 +12,7 @@ import { Error404Component } from './errors/Error404/Error404.component';
 import { EventRouteActivator } from './events/event-details/event-route-activator.service';
 import { componentNeedsResolution } from '@angular/core/src/metadata/resource_loading';
 import { EventsListResolver } from './services/events-list-resolver.service';
+import { ProfileComponent } from './user/profile/profile.component';
 //import { ToastrService } from './services/toastr.service';
 //import { EventService } from './services/event.service';
 
@@ -27,7 +28,8 @@ import { EventsListResolver } from './services/events-list-resolver.service';
     CreateEventComponent,
     NavBarComponent,
     EventDetailsComponent,
-    Error404Component
+    Error404Component,
+    ProfileComponent
   ],
   //providers: [EventService, ToastrService],
   providers: [
