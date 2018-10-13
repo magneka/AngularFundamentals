@@ -13,6 +13,9 @@ export class LoginComponent implements OnInit {
   username: string
   password: string
 
+  // NB fungerer uten å deklarere denne, (autodeklarert i html??)
+  mouseoverlogin: boolean
+
   constructor(
     private authService: AuthService, 
     private router: Router
