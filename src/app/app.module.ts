@@ -14,6 +14,7 @@ import { Error404Component } from './errors/Error404/Error404.component';
 import { NavBarComponent } from './nav/nav-bar/nav-bar.component';
 import { appRoutes } from './routes';
 import { AuthService } from './user/auth.service';
+import { CreateSessionComponent } from './events/create-session/create-session.component';
 //import { ToastrService } from './services/toastr.service';
 //import { EventService } from './services/event.service';
 
@@ -32,6 +33,7 @@ import { AuthService } from './user/auth.service';
     NavBarComponent,
     EventDetailsComponent,
     Error404Component,
+    CreateSessionComponent,
   ],
   //providers: [EventService, ToastrService],
   providers: [
