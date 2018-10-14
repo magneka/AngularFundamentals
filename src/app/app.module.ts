@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { TOASTR_TOKEN, Toastr } from './services/toastr.service';
-import { JQ_TOKEN, jQuery } from './services/jQuery.service';
+import { JQ_TOKEN } from './services/jQuery.service';
 
 import { EventsAppComponent } from './events-app.component';
 import { EventListComponent } from './events/event-list/event-list.component';
@@ -21,12 +21,13 @@ import { CreateSessionComponent } from './events/create-session/create-session.c
 import { SessionListComponent } from './events/session-list/session-list.component';
 import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-well.component';
 import { DurationPipe } from './events/shared/duration.pipe';
+import { SimpleModalComponent } from './common/simple-modal/simple-modal.component';
 
 //import { EventService } from './services/event.service';
 
 // Global variable to javascript object
 let toastr:Toastr = window['toastr'];
-let jquery = window['$'];
+let jQuery = window['$'];
 
 @NgModule({
   imports: [
@@ -46,7 +47,8 @@ let jquery = window['$'];
     CreateSessionComponent,
     SessionListComponent,
     CollapsibleWellComponent,
-    DurationPipe
+    DurationPipe,
+    SimpleModalComponent
   ],
   //providers: [EventService, ToastrService],
   providers: [
