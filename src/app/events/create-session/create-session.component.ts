@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ISession } from '../shared';
+import { restrictedWord, restrictedWords } from '../shared/restricted-words.validator'; 
 
 @Component({
   selector: 'create-session',
@@ -18,11 +19,11 @@ export class CreateSessionComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.name = new FormControl('', Validators.required)
+    this.name = new FormControl('', [Validators.required, restrictedWord])
     this.presenter = new FormControl('', Validators.required)
     this.duration = new FormControl('', Validators.required)
     this.level = new FormControl('', Validators.required)
-    this.abstract = new FormControl('', [Validators.required, Validators.maxLength(400)])
+    this.abstract = new FormControl('', [Validators.required, Validators.maxLength(400), restrictedWords(['foo', 'bar', 'dickhead'])])
 
     this.newSessionForm = new FormGroup ({
       name: this.name,
@@ -32,6 +33,11 @@ export class CreateSessionComponent implements OnInit {
       abstract: this.abstract,
     })
   }
+
+  
+
+
+ 
 
   saveSession(formValues) {
     let session: ISession = {
