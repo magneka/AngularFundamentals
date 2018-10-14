@@ -17,6 +17,7 @@ import { AuthService } from './user/auth.service';
 import { CreateSessionComponent } from './events/create-session/create-session.component';
 import { SessionListComponent } from './events/session-list/session-list.component';
 import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-well.component';
+import { DurationPipe } from './events/shared/duration.pipe';
 //import { ToastrService } from './services/toastr.service';
 //import { EventService } from './services/event.service';
 
@@ -38,6 +39,7 @@ import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-
     CreateSessionComponent,
     SessionListComponent,
     CollapsibleWellComponent,
+    DurationPipe
   ],
   //providers: [EventService, ToastrService],
   providers: [
