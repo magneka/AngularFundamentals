@@ -16,6 +16,7 @@ import { appRoutes } from './routes';
 import { AuthService } from './user/auth.service';
 import { CreateSessionComponent } from './events/create-session/create-session.component';
 import { SessionListComponent } from './events/session-list/session-list.component';
+import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-well.component';
 //import { ToastrService } from './services/toastr.service';
 //import { EventService } from './services/event.service';
 
@@ -36,6 +37,7 @@ import { SessionListComponent } from './events/session-list/session-list.compone
     Error404Component,
     CreateSessionComponent,
     SessionListComponent,
+    CollapsibleWellComponent,
   ],
   //providers: [EventService, ToastrService],
   providers: [
