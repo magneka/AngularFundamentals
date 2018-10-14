@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { TOASTR_TOKEN, Toastr } from './services/toastr.service';
+
 import { EventsAppComponent } from './events-app.component';
 import { EventListComponent } from './events/event-list/event-list.component';
 import { EventThumbnailComponent } from './events/event-thumbnail/event-thumbnail.component';
@@ -20,6 +22,9 @@ import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-
 import { DurationPipe } from './events/shared/duration.pipe';
 //import { ToastrService } from './services/toastr.service';
 //import { EventService } from './services/event.service';
+
+// Global variable to javascript object
+declare let toastr:Toastr
 
 @NgModule({
   imports: [
@@ -43,7 +48,8 @@ import { DurationPipe } from './events/shared/duration.pipe';
   ],
   //providers: [EventService, ToastrService],
   providers: [
-    AuthService,
+    AuthService,    
+    { provide: TOASTR_TOKEN, useValue: toastr },
     EventRouteActivator,
     EventsListResolver,
     {

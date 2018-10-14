@@ -7,13 +7,7 @@ export class AuthService {
   currentUser: IUser
 
   constructor() {
-    console.log("Auth.service constructed")
-    /*this.currentUser = {
-      id: 0,
-      userName: '',
-      firstName: '',
-      lastName: ''
-    }*/
+    console.log("Auth.service constructed")    
    }
 
   loginUser(userName: string, password: string) {
