@@ -22,6 +22,7 @@ import { SessionListComponent } from './events/session-list/session-list.compone
 import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-well.component';
 import { DurationPipe } from './events/shared/duration.pipe';
 import { SimpleModalComponent } from './common/simple-modal/simple-modal.component';
+import { ModalTriggerDirective } from './services/modalTrigger.directive';
 
 //import { EventService } from './services/event.service';
 
@@ -48,7 +49,8 @@ let jQuery = window['$'];
     SessionListComponent,
     CollapsibleWellComponent,
     DurationPipe,
-    SimpleModalComponent
+    SimpleModalComponent,
+    ModalTriggerDirective
   ],
   //providers: [EventService, ToastrService],
   providers: [
