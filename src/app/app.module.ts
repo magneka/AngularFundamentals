@@ -23,6 +23,7 @@ import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-
 import { DurationPipe } from './events/shared/duration.pipe';
 import { SimpleModalComponent } from './common/simple-modal/simple-modal.component';
 import { ModalTriggerDirective } from './services/modalTrigger.directive';
+import { UpvoteComponent } from './events/upvote/upvote.component';
 
 //import { EventService } from './services/event.service';
 
@@ -50,7 +51,8 @@ let jQuery = window['$'];
     CollapsibleWellComponent,
     DurationPipe,
     SimpleModalComponent,
-    ModalTriggerDirective
+    ModalTriggerDirective,
+    UpvoteComponent
   ],
   //providers: [EventService, ToastrService],
   providers: [
