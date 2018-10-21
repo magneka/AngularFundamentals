@@ -24,6 +24,7 @@ import { DurationPipe } from './events/shared/duration.pipe';
 import { SimpleModalComponent } from './common/simple-modal/simple-modal.component';
 import { ModalTriggerDirective } from './services/modalTrigger.directive';
 import { UpvoteComponent } from './events/upvote/upvote.component';
+import { LocationValidator } from './events/create-event/location.validator.directive';
 
 //import { EventService } from './services/event.service';
 
@@ -52,7 +53,8 @@ let jQuery = window['$'];
     DurationPipe,
     SimpleModalComponent,
     ModalTriggerDirective,
-    UpvoteComponent
+    UpvoteComponent,
+    LocationValidator
   ],
   //providers: [EventService, ToastrService],
   providers: [
