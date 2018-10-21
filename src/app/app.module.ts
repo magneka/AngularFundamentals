@@ -13,7 +13,6 @@ import { EventThumbnailComponent } from './events/event-thumbnail/event-thumbnai
 import { EventDetailsComponent } from './events/event-details/event-details.component';
 import { CreateEventComponent } from './events/create-event/create-event.component';
 import { EventsListResolver } from './services/events-list-resolver.service';
-import { EventRouteActivator } from './events/event-details/event-route-activator.service';
 import { Error404Component } from './errors/Error404/Error404.component';
 import { NavBarComponent } from './nav/nav-bar/nav-bar.component';
 import { appRoutes } from './routes';
@@ -26,6 +25,7 @@ import { SimpleModalComponent } from './common/simple-modal/simple-modal.compone
 import { ModalTriggerDirective } from './services/modalTrigger.directive';
 import { UpvoteComponent } from './events/upvote/upvote.component';
 import { LocationValidator } from './events/create-event/location.validator.directive';
+import { EventResolver } from './services/event-resolver.service';
 
 //import { EventService } from './services/event.service';
 
@@ -63,7 +63,7 @@ let jQuery = window['$'];
     AuthService,    
     { provide: TOASTR_TOKEN, useValue: toastr },
     { provide: JQ_TOKEN, useValue: jQuery },
-    EventRouteActivator,
+    EventResolver,
     EventsListResolver,
     {
       provide: 'canDeactivateCreateEvent',
